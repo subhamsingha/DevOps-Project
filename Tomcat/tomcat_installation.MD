@@ -1,7 +1,7 @@
 # Tomcat installation on EC2 instance
 ### Pre-requisites
 1. EC2 instance with Java 11
-   sudo dnf install java-11-amazon-corretto -y
+   => sudo dnf install java-11-amazon-corretto -y
 ### Install Apache Tomcat
 1. Download tomcat packages from  https://tomcat.apache.org/download-80.cgi onto /opt on EC2 instance
    > Note: Make sure you change `<version>` with the tomcat version which you download. 
