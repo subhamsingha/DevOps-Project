@@ -44,7 +44,7 @@ Enable connection between Docker-host and Jenkins
        - `Transfers` >  `Transfer set`
             - Source files: `webapp/target/*.war`
 	       - Remove prefix: `webapp/target`
-	       - Remote directory: `//home//ansadmin` or `.`
+	       - Remote directory: `/home/dockeradmin` or `.`
 	 
 
 Save and run the job now.
