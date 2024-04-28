@@ -9,11 +9,11 @@ chown -R dockeradmin:dockeradmin /opt/docker
 `
 
 ### Create docker file in /opt/docker folder and the copy war file to docker container
-`
-FROM tomcat:latest
-RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
-COPY ./*.war /usr/local/tomcat/webapps/
-`
+
+`FROM tomcat:latest`
+`RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/`
+`COPY ./*.war /usr/local/tomcat/webapps/`
+
 
 ### Build the Docker Image
 
