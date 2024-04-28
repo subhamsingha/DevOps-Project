@@ -1,10 +1,2 @@
-FROM amazonlinux
-RUN yum install java-11-amazon-corretto -y
-RUN yum install tar gzip -y
-RUN mkdir /opt/tomcat/
-WORKDIR /opt/tomcat
-ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz /opt/tomcat
-RUN tar -xvzf apache*.tar.gz
-RUN mv apache-tomcat-8.5.100/* /opt/tomcat
-EXPOSE 8081
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+FROM tomcat:latest
+RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
