@@ -1,5 +1,0 @@
----
-- hosts: docker
-  tasks:
-  - name: create docker container
-    shell: docker run -d --name regapp-server -p 8082:8080 ssingha/regapp:latest
