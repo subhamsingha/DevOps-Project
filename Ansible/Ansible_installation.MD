@@ -18,6 +18,8 @@ Ansible is an open-source automation platform. It is very, very simple to set up
     ```sh
     pip install ansible
    ansible --version
+  To generate ansible config file - 
+  https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html#configuration-file
    ```
    
 1. Create a user called ansadmin (on Control node and Managed host)  
